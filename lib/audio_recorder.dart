@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-export 'package:audio_recorder/error_code.dart';
+export 'error_code.dart';
 
 class AudioRecorder {
   static const MethodChannel _channel = const MethodChannel('io.chengguo/audio_recorder');
