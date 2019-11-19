@@ -1,8 +1,8 @@
 name: chengguo_audio_recorder
 description: A flutter plugin for audio record.
-version: 0.0.1
+version: 0.0.1+1
 author: george <george@chengguo.io>
-homepage: https://github.com/FingerArt/flutter-audio-recorder
+homepage: https://github.com/FingerArt/flutter_audio_recorder
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

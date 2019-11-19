@@ -28,7 +28,8 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(top: 50),
-                child: Text("${_tick}s  ${_db}db", style: TextStyle(fontSize: 40, color: Colors.blue)),
+                child: Text("${_tick}s  ${_db}db",
+                    style: TextStyle(fontSize: 40, color: Colors.blue)),
               ),
               MaterialButton(
                 onPressed: _isRecording ? null : () => _startRecord(),
@@ -48,7 +49,9 @@ class _MyAppState extends State<MyApp> {
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
-                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.all(Radius.circular(4))),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.all(Radius.circular(4))),
                     child: Text(
                       "${_audioPath ?? "Empty"}",
                       style: TextStyle(color: Colors.white),
