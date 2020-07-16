@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:audio_recorder/audio_recorder.dart';
+import 'package:chengguo_audio_recorder/audio_recorder.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

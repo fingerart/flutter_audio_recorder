@@ -6,7 +6,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
-class AudioRecorderPlugin(private val registrar: Registrar, channel: MethodChannel) : MethodCallHandler {
+class ChengguoAudioRecorderPlugin(private val registrar: Registrar, channel: MethodChannel) : MethodCallHandler {
 
     private val permissionHandler: PermissionHandler = PermissionHandler()
     private val audioRecorder = AudioRecorder()
@@ -15,7 +15,7 @@ class AudioRecorderPlugin(private val registrar: Registrar, channel: MethodChann
         @JvmStatic
         fun registerWith(registrar: Registrar) {
             val channel = MethodChannel(registrar.messenger(), "io.chengguo/audio_recorder")
-            AudioRecorderPlugin(registrar, channel)
+            ChengguoAudioRecorderPlugin(registrar, channel)
         }
     }
 

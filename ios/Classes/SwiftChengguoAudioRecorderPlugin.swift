@@ -2,13 +2,13 @@ import Flutter
 import UIKit
 import AVFoundation
 
-public class SwiftAudioRecorderPlugin: NSObject, FlutterPlugin {
+public class SwiftChengguoAudioRecorderPlugin: NSObject, FlutterPlugin {
     
     var recorder: AVAudioRecorder?
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "io.chengguo/audio_recorder", binaryMessenger: registrar.messenger())
-        let instance = SwiftAudioRecorderPlugin()
+        let instance = SwiftChengguoAudioRecorderPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     
